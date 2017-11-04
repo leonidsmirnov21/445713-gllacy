@@ -29,9 +29,23 @@
       <main>
           <h1 class="visually-hidden">магазин "Gllacy Shop"</h1>      
           <section class="slider">
-              <a href=""><img src="" alt=""></a>
-              <a href=""><img src="" alt=""></a>
-              <a href=""><img src="" alt=""></a>
+              <div class="slider-photo">
+                  <input type="radio" id="btn-1" name="toggle" checked>
+                  <input type="radio" id="btn-2" name="toggle">
+                  <input type="radio" id="btn-3" name="toggle">
+                  <div class="slider-controls">
+                      <label for="btn-1"></label>
+                      <label for="btn-2"></label>
+                      <label for="btn-3"></label>
+                  </div>
+                  <div class="slider-inner">
+                      <div class="slider-slides">
+                          <img src="phpto-1-slide.jpg" alt="фото 1">
+                          <img src="photo-2-slide.jpg" alt="фото 2">
+                          <img src="photo-3-slide.jpg" alt="фото 3">
+                      </div>
+                  </div>
+              </div>
           </section>
           
           <section class="spec-offers">
@@ -115,22 +129,22 @@
                   Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
               </p>
               <ul class="features">
-                  <li>
+                  <li class="feature">
                       <p>
                           Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
                       </p>
                   </li>
-                  <li>
+                  <li class="feature">
                       <p>
                           Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                       </p>
                   </li>
-                  <li>
+                  <li class="feature">
                       <p>
                           Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
                       </p>
                   </li>
-                  <li>
+                  <li class="feature">
                       <p>
                           Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
                       </p>
@@ -171,8 +185,7 @@
                   </p>
                   <button>Форма обратной связи</button>
               </div>
-          </section>
-          
+          </section>  
       </main>
                           
       <footer class="page-footer">
@@ -190,7 +203,7 @@
               </ul>
               <div class="footer-copyright">
                   <a href="" class="button"><img src="logo-footer.png" alt="HTML academy"></a>
-                  <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
+                  <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
               </div>
       </footer>
                            
