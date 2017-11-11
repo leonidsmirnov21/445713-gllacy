@@ -30,18 +30,23 @@
               </nav>
               
               <div class="navigation">
-                  <span class="navigation-search">поиск</span>
-                  <form action="">
-                      <input type="search" placeholder="Что ищем?">
+                  <span class="navigation-search">Поиск</span>
+                  <form method="get" action="https://echo.htmlacademy.ru/">
+                      <label class="visually-hidden">Поиск</label>
+                      <input type="search" name="search" placeholder="Что ищем?">
                   </form>
+                  
                   <span class="navigation-login">вход</span>
-                  <form action="">
-                      <input type="text" placeholder="Электронная почта">
-                      <input type="password" placeholder="Пароль">
-                      <input type="button" value="Войти">
-                      <a href="">Забыли пароль?</a>
-                      <a href="">Новая регистрация</a>
+                  <form method="post" action="https://echo.htmlacademy.ru/">
+                      <label class="visually-hidden">Электронная почта</label>
+                      <input type="text" name="email" placeholder="Электронная почта">
+                      <label class="visually-hidden">Пароль</label>
+                      <input type="password" name="password" placeholder="Пароль">
+                      <input type="submit" value="Войти">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
                   </form>
+                  
                   <span class="navigation-basket">пусто</span>
               </div>
               
@@ -175,7 +180,7 @@
               </section>
 
               <section class="adv">
-                  <h2>Ещё о нас</h2>
+                  <h2 class="visually-hidden">Ещё о нас</h2>
                   <article class="blog">
                       <h3 class="blog-title">Новое в нашем блоге</h3>
                       <p>
@@ -186,15 +191,16 @@
                       <p>
                           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
                       </p>
-                      <form action="">
-                          <input type="text" placeholder="Электронная почта">
-                          <input type="button" value="отправить">
+                      <form method="post" action="https://echo.htmlacademy.ru/">
+                          <label class="visually-hidden">Электронная почта</label>
+                          <input type="text" name="email" placeholder="Электронная почта">
+                          <input type="submit" value="отправить">
                       </form>
                   </div>
               </section>
 
               <section class="contacts">
-                  <h2>контактная информация</h2>
+                  <h2 class="visually-hidden">контактная информация</h2>
                   <div class="contacts-info">
                       <p>
                           Адрес главного офиса и офлайн-магазина:<br>
@@ -206,25 +212,38 @@
                           (с 10 до 20 ежедневно)
                       </p>
                       <button type="button">Форма обратной связи</button>
+                      <form method="post" action="https://echo.htmlacademy.ru/">
+                          <p>Мы обязательно вам ответим!</p>
+                          <label class="visually-hidden">Ваше имя</label>
+                          <input type="text" name="name" placeholder="Как вас зовут?">
+                          <label class="visually-hidden">Ваша почта</label>
+                          <input type="text" name="email" placeholder="Ваша почта для ответа?">
+                          <label class="visually-hidden">Напишите отзыв</label>
+                          <textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+                          <input type="submit" value="отправить">
+                      </form>
                   </div>
               </section>  
           </main>
 
           <footer class="page-footer">
                   <ul class="footer-social">
-                      <li><a href="" class="social-button">Твитер</a></li>
-                      <li><a href="" class="social-button">Инстаграм</a></li>
-                      <li><a href="" class="social-button">Фейсбук</a></li>
-                      <li><a href="" class="social-button">Вконтакте</a></li>
+                      <h2 class="visually-hidden">Социальные сети</h2>
+                      <li><a href="#" class="social-button button-tw">Твитер</a></li>
+                      <li><a href="#" class="social-button button-inst">Инстаграм</a></li>
+                      <li><a href="#" class="social-button button-face">Фейсбук</a></li>
+                      <li><a href="#" class="social-button button-vk">Вконтакте</a></li>
                   </ul>
+                  
                   <ul class="footer-menu">
-                      <li><a href=""><b>Для поставщиков</b></a></li>
-                      <li><a href="">О производстве</a></li>
-                      <li><a href="">Наши документы</a></li>
-                      <li><a href="">Экологические стандарты</a></li>
+                      <li><a href="#"><b>Для поставщиков</b></a></li>
+                      <li><a href="#">О производстве</a></li>
+                      <li><a href="#">Наши документы</a></li>
+                      <li><a href="#">Экологические стандарты</a></li>
                   </ul>
+                  
                   <div class="footer-copyright">
-                      <a href="https://htmlacademy.ru/" class="button"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML academy"></a>
+                      <a href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML academy"></a>
                       <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
                   </div>
           </footer>
