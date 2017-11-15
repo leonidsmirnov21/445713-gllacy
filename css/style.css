@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  
+  background-color: #849d8f;
+}
+
+.menu {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.main-menu,
+.sub-menu,
+.footer-menu {
+    list-style: none;
+}
+
+.main-menu a,
+.footer-social a,
+.footer-menu a,
+.spec-offers a,
+.item a,
+.footer-copyright a {
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+textarea {
+    color: #999999;
+    border: 1px solid #b2b2b2;
+    outline: none;
+}
+
+input[type="text"]:hover,
+input[type="search"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+    color: #999999;
+    border: 2px solid #9a9a9a;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border: 2px solid #2e88e4;
+}
+
+
+.button,
+input[type="submit"],
+input[type="button"] {
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    background-image: linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+    border: none;
+    text-decoration: none;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+    background-color: #f7f6f3;
+    color: #333333;
+    text-decoration: none;
+}
+
+.main-menu a:active {
+    background-color: #ededed;
+}
+
+.main-menu a:not([href]) {
+    background-color: #d07058;
+}
+
+.sub-menu {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+.sub-menu a {
+    color: #323232;
+    text-decoration: none;
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+    background-color: #fbded7;
+}
+
+.sub-menu a:active {
+    background-color: #f6b5a5;
+}
+
+.sub-menu a:not([href]) {
+    background-color: #d07058;
+}
+
+.navigation {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.navigation a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232;
+}
+
+.navigation a:hover,
+.navigation a:focus,
+.navigation a:active {
+    color: #e84d37;
+}
+
+.navigation form {
+    background-color: #f8f7f4;
+}
+
+.navigation input:not(type="submit") {
+    font: inherit;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.basket {
+    background-color: #f8f7f4;
+}
+
+.basket-fill {
+    list-style: none;
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+}
+
+.basket-fill h3 {
+    font-weight: normal;
+}
+
+.basket-fill span {
+    color: #999999;
+}
+
+.finish-price {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.mode {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.mode span {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.breadcrumbs a[href]:hover,
+.breadcrumbs a[href]:focus,
+.breadcrumbs a[href]:active {
+    color: #e84d37;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+}
+
+.spec-offers h3 {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.spec-offers p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.offer:first-of-type {
+    background-image: url(../img/raspberries.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.offer:last-of-type {
+    background-image: url(../img/chocolate.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.filters legend {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.filters label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.hits,
+.catalog-list {
+    list-style: none;
+}
+
+.item h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.item-price {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.item-price span {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.item .button {
+    width: 200px;
+    height: 44px;
+    border-radius: 20px;
+}
+
+.about-us {
+    background-image: url(../img/wafer.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.about {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #323232;
+    
+}
+
+.features {
+    list-style: none;
+}
+
+.feature p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+}
+
+.blog {
+    background-image: url(../img/bg-strawberry.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.blog h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.blog a {
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+}
+
+.blog a:hover,
+.blog a:focus,
+.blog a:active {
+    color: #e84d37;
+}
+
+.dispatch {
+    background-color: #f8f7f4;
+}
+
+.dispatch p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+}
+
+.dispatch input:not(type="submit") {
+    font: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    border: 1px solid #d3d3d2;
+    border-radius: 3px;
+}
+
+.contacts {
+    background-image: url(../img/map.jpg);
+}
+
+.contacts-info p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323232;
+}
+
+.contacts-info b {
+    font-size: 18px;
+    line-height: 24px;
+    color: #323232;
+    font-weight: bold;
+}
+
+.contacts-info .tel {
+    font-size: 18px;
+    line-height: 22px;
+    color: #323232;
+    font-weight: bold;
+}
+
+.contacts-info span {
+    font-size: 14px;
+    line-height: 22px;
+    color: #323232;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-list a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.pagination-list a:not([href]) {
+    color: #353535;
+    background-color: #ffffff; 
+}
+
+.pagination-list a[href]:hover,
+.pagination-list a[href]:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-list a[href]:active,
+.pagination-list a[href]:active {
+    color: #353535;
+    background-color: #ffffff;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.footer-menu {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus,
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+    color: #ffbc9e;
+}
