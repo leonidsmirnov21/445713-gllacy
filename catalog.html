@@ -10,77 +10,80 @@
   <body>
       <div class="container">      
           <header class="page-header">
-              <a href="index.html"><img src="img/logo.svg" alt="логотип GllacyShop"></a>
+              <div class="header-wrapper">
+                  <div class="header-logo"><a href="index.html"><img src="img/logo.svg" alt="логотип GllacyShop"></a></div>
 
-              <nav class="menu">
-                  <ul class="main-menu">
-                      <li><a>Каталог</a>
-                          <ul class="sub-menu catalog-sub">
-                              <li><a href="#"><b>Новинки</b></a></li>
-                              <li><a href="#">Сливочное</a></li>
-                              <li><a href="#">Щербеты</a></li>
-                              <li><a href="#">Фруктовый лед</a></li>
-                              <li><a href="#">Мелорин</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#">Доставка и оплата</a></li>
-                      <li><a href="#">О компании</a></li>
-                  </ul>
-              </nav>
-
-              <div class="navigation">
-                  <span class="navigation-search">поиск</span>
-                  <form method="get" action="https://echo.htmlacademy.ru/">
-                      <label class="visually-hidden">Поиск</label>
-                      <input type="search" name="search" placeholder="Что ищем?">
-                  </form>
-                  
-                  <span class="navigation-login">вход</span>
-                  <form method="post" action="https://echo.htmlacademy.ru/">
-                      <label class="visually-hidden">Электронная почта</label>
-                      <input type="text" name="email" placeholder="Электронная почта">
-                      <label class="visually-hidden">Пароль</label>
-                      <input type="password" name="password" placeholder="Пароль">
-                      <input type="submit" value="Войти">
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
-                  </form>
-                  
-                  <span class="navigation-basket">2 товаров</span>
-                  <div class="basket">
-                      <ul class="basket-fill">
-                          <li>
-                              <img src="img/item1.jpg" width="33" height="33" alt="сливочное с апельсиновым...">
-                              <h3>Пломбир с апильсиновым джемом</h3>
-                              <p>1,5 кг х <span>200 руб.</span></p>
-                              <p>300 руб.</p>
+                  <nav class="menu">
+                      <ul class="main-menu">
+                          <li><a>Каталог</a>
+                              <ul class="sub-menu catalog-sub">
+                                  <li><a href="#"><b>Новинки</b></a></li>
+                                  <li><a href="#">Сливочное</a></li>
+                                  <li><a href="#">Щербеты</a></li>
+                                  <li><a href="#">Фруктовый лед</a></li>
+                                  <li><a href="#">Мелорин</a></li>
+                              </ul>
                           </li>
-                          <li>
-                              <img src="img/item3.jpg" width="33" height="33" alt="сливочно-клубничное...">
-                              <h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
-                              <p>1,5 кг х <span>300 руб.</span></p>
-                              <p>450 руб.</p>
-                          </li>
+                          <li><a href="#">Доставка и оплата</a></li>
+                          <li><a href="#">О компании</a></li>
                       </ul>
-                      <p class="finish-price">Итого: 750 руб.</p>
-                      <button type="button" class="button">Оформить заказ</button>
-                  </div>
-                  
-              </div>
+                  </nav>
 
-              <p class="mode">
-                  с 10 до 20, ежедневно<br>
-                  <span>8 812 450-25-25</span>
-              </p>
+                  <div class="navigation">
+                      <span class="navigation-search">Поиск</span>
+                      <form method="get" action="https://echo.htmlacademy.ru/">
+                          <label class="visually-hidden">Поиск</label>
+                          <input type="search" name="search" placeholder="Что ищем?">
+                      </form>
+
+                      <span class="navigation-login">Вход</span>
+                      <form method="post" action="https://echo.htmlacademy.ru/">
+                          <label class="visually-hidden">Электронная почта</label>
+                          <input type="text" name="email" placeholder="Электронная почта">
+                          <label class="visually-hidden">Пароль</label>
+                          <input type="password" name="password" placeholder="Пароль">
+                          <input type="submit" value="Войти">
+                          <a href="#">Забыли пароль?</a>
+                          <a href="#">Новая регистрация</a>
+                      </form>
+
+                      <span class="navigation-basket">2 товаров</span>
+                      <div class="basket">
+                          <ul class="basket-fill">
+                              <li>
+                                  <img src="img/item1.jpg" width="33" height="33" alt="сливочное с апельсиновым...">
+                                  <h3>Пломбир с апильсиновым джемом</h3>
+                                  <p>1,5 кг х <span>200 руб.</span></p>
+                                  <p>300 руб.</p>
+                              </li>
+                              <li>
+                                  <img src="img/item3.jpg" width="33" height="33" alt="сливочно-клубничное...">
+                                  <h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
+                                  <p>1,5 кг х <span>300 руб.</span></p>
+                                  <p>450 руб.</p>
+                              </li>
+                          </ul>
+                          <p class="finish-price">Итого: 750 руб.</p>
+                          <button type="button" class="button">Оформить заказ</button>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="mode-wrapper">
+                  <ul class="breadcrumbs">
+                      <li><a href="index.html">Главная</a></li>
+                      <li><a href="">Каталог</a></li>
+                      <li><a>Сливочное</a></li>
+                  </ul>
+
+                  <p class="mode">
+                      с 10 до 20, ежедневно<br>
+                      <span>8 812 450-25-25</span>
+                  </p>
+              </div>
           </header>
 
           <main>
-              <ul class="breadcrumbs">
-                  <li><a href="index.html">Главная</a></li>
-                  <li><a href="">Каталог</a></li>
-                  <li><a>Сливочное</a></li>
-              </ul>
-              
               <h1>Сливочное мороженое</h1>
 
               <section class="filters">
@@ -131,10 +134,8 @@
                   <h2 class="visually-hidden">Список товаров</h2>
                   <ul class="catalog-list">
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item1.html">         
+                          <p class="item-image">         
                                   <img src="img/item1.jpg" width="267" height="267" alt="сливочное с апельсиновым...">
-                              </a>
                           </p>
                           <p class="item-price">310&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -144,10 +145,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item2.html">         
+                          <p class="item-image">        
                                   <img src="img/item2.jpg" width="267" height="267" alt="сливочно-кофейное...">
-                              </a>
                           </p>
                           <p class="item-price">380&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -157,10 +156,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item3.html">         
+                          <p class="item-image">        
                                   <img src="img/item3.jpg" width="267" height="267" alt="сливочно-клубничное...">
-                              </a>
                           </p>
                           <p class="item-price">355&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -170,10 +167,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item4.html">         
+                          <p class="item-image">         
                                   <img src="img/item4.jpg" width="267" height="267" alt="сливочное крем-брюле...">
-                              </a>
                           </p>
                           <p class="item-price">415&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -183,10 +178,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item5.html">         
+                          <p class="item-image">        
                                   <img src="img/item5.jpg" width="267" height="267" alt="сливочное с брусничным...">
-                              </a>
                           </p>
                           <p class="item-price">325&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -196,10 +189,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item6.html">         
+                          <p class="item-image">         
                                   <img src="img/item6.jpg" width="267" height="267" alt="сливочное-черничное...">
-                              </a>
                           </p>
                           <p class="item-price">410&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -209,10 +200,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item7.html">         
+                          <p class="item-image">        
                                   <img src="img/item7.jpg" width="267" height="267" alt="сливочное с апельсиновым...">
-                              </a>
                           </p>
                           <p class="item-price">375&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -222,10 +211,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item8.html">         
+                          <p class="item-image">         
                                   <img src="img/item8.jpg" width="267" height="267" alt="сливочное с шоколадной...">
-                              </a>
                           </p>
                           <p class="item-price">320&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -235,10 +222,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item9.html">         
+                          <p class="item-image">        
                                   <img src="img/item9.jpg" width="267" height="267" alt="сливочно-ванильное...">
-                              </a>
                           </p>
                           <p class="item-price">440&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -248,10 +233,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item10.html">         
+                          <p class="item-image">        
                                   <img src="img/item10.jpg" width="267" height="267" alt="сливочное с ментоловым...">
-                              </a>
                           </p>
                           <p class="item-price">435&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -261,10 +244,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item11.html">         
+                          <p class="item-image">         
                                   <img src="img/item11.jpg" width="267" height="267" alt="сливочное с кусочками...">
-                              </a>
                           </p>
                           <p class="item-price">355&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -274,10 +255,8 @@
                       </li>
 
                       <li class="item">
-                          <p class="item-image">
-                              <a href="item12.html">         
+                          <p class="item-image">        
                                   <img src="img/item12.jpg" width="267" height="267" alt="сливочное с мятным...">
-                              </a>
                           </p>
                           <p class="item-price">420&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
@@ -287,16 +266,21 @@
                       </li>
                   </ul>
 
-                  <ul class="pagination-list">
-                      <li class="pagination-item"><a>1</a></li>
-                      <li class="pagination-item"><a href="#">2</a></li>
-                      <li class="pagination-item"><a href="#">3</a></li>
-                      <li class="pagination-item"><a href="#">4</a></li>
-                      <li class="pagination-item"><a href="#">5</a></li>
-                      <li class="pagination-item"><a href="#">Следующая</a></li>
-                  </ul>
+                  <div class="pagination-wrapper">
+                      <ul class="pagination-list">
+                          <li class="pagination-item"><a>Предыдущая</a></li>
+                          <li class="pagination-item"><a>1</a></li>
+                          <li class="pagination-item"><a href="#">2</a></li>
+                          <li class="pagination-item"><a href="#">3</a></li>
+                          <li class="pagination-item"><a href="#">4</a></li>
+                          <li class="pagination-item"><a href="#">5</a></li>
+                          <li class="pagination-item"><a href="#">Следующая</a></li>
+                      </ul>
+                  </div>
               </section>
           </main>
+          
+          <hr>
 
           <footer class="page-footer">
                   <ul class="footer-social">
