@@ -15,7 +15,7 @@
       <div class="container">                  
           <header class="page-header">
               <div class="header-wrapper">
-                  <div class="header-logo"><a><img src="img/logo.svg" width="154" height="64" alt="логотип GllacyShop"></a></div>
+                  <a class="header-logo"><img src="img/logo.svg" width="154" height="64" alt="логотип GllacyShop"></a>
 
                   <nav class="menu">
                       <ul class="main-menu">
@@ -34,24 +34,30 @@
                   </nav>
 
                   <div class="navigation">
-                      <span class="navigation-search">Поиск</span>
-                      <form method="get" action="https://echo.htmlacademy.ru/">
-                          <label class="visually-hidden">Поиск</label>
-                          <input type="search" name="search" placeholder="Что ищем?">
-                      </form>
+                      <div class="search-wrapper">
+                          <span class="navigation-search">Поиск</span>
+                          <form method="get" action="https://echo.htmlacademy.ru/">
+                              <label class="visually-hidden">Поиск</label>
+                              <input type="search" name="search" placeholder="Что ищем?">
+                          </form>
+                      </div>
 
-                      <span class="navigation-login">Вход</span>
-                      <form method="post" action="https://echo.htmlacademy.ru/">
-                          <label class="visually-hidden">Электронная почта</label>
-                          <input type="text" name="email" placeholder="Электронная почта">
-                          <label class="visually-hidden">Пароль</label>
-                          <input type="password" name="password" placeholder="Пароль">
-                          <input type="submit" class="button" value="Войти">
-                          <a href="#">Забыли пароль?</a>
-                          <a href="#">Новая регистрация</a>
-                      </form>
+                      <div class="login-wrapper">
+                          <span class="navigation-login">Вход</span>
+                          <form method="post" action="https://echo.htmlacademy.ru/">
+                              <label class="visually-hidden">Электронная почта</label>
+                              <input type="text" name="email" placeholder="Электронная почта">
+                              <label class="visually-hidden">Пароль</label>
+                              <input type="password" name="password" placeholder="Пароль">
+                              <input type="submit" class="button" value="Войти">
+                              <a href="#">Забыли пароль?</a>
+                              <a href="#">Новая регистрация</a>
+                          </form>
+                      </div>
 
-                      <span class="navigation-basket">Пусто</span>
+                      <div class="basket-wrapper">
+                          <span class="navigation-basket">Пусто</span>
+                      </div>
                   </div>
               </div>
               
@@ -106,9 +112,9 @@
                   <ul class="hits">
                       <li class="item hit">
                           <p class="item-image">        
-                                  <img src="img/item1.jpg" width="267" height="267" alt="сливочное с апельсиновым...">
+                              <img src="img/item1.jpg" width="267" height="267" alt="сливочное с апельсиновым...">
+                              <span class="item-price">310&#8381;<span class="kg">/кг</span></span>
                           </p>
-                          <p class="item-price">310&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
                               <a href="item1.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                           </h3>
@@ -117,9 +123,9 @@
 
                       <li class="item hit">
                           <p class="item-image">        
-                                  <img src="img/item2.jpg" width="267" height="267" alt="сливочно-кофейное...">
+                              <img src="img/item2.jpg" width="267" height="267" alt="сливочно-кофейное...">
+                              <span class="item-price">380&#8381;<span class="kg">/кг</span></span>
                           </p>
-                          <p class="item-price">380&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
                               <a href="item2.html">Сливочно-кофейное с кусочками шоколада</a>
                           </h3>
@@ -128,9 +134,9 @@
 
                       <li class="item hit">
                           <p class="item-image">        
-                                  <img src="img/item3.jpg" width="267" height="267" alt="сливочно-клубничное...">
+                              <img src="img/item3.jpg" width="267" height="267" alt="сливочно-клубничное...">
+                              <span class="item-price">355&#8381;<span class="kg">/кг</span></span>
                           </p>
-                          <p class="item-price">355&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
                               <a href="item3.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
                           </h3>
@@ -139,9 +145,9 @@
 
                       <li class="item hit">
                           <p class="item-image">        
-                                  <img src="img/item4.jpg" width="267" height="267" alt="сливочное крем-брюле...">
+                              <img src="img/item4.jpg" width="267" height="267" alt="сливочное крем-брюле...">
+                              <span class="item-price">415&#8381;<span class="kg">/кг</span></span>
                           </p>
-                          <p class="item-price">415&#8381;<span class="kg">/кг</span></p>
                           <h3 class="item-info">
                               <a href="item4.html">Сливочное крем-брюле с карамельной подливкой</a>
                           </h3>
@@ -158,28 +164,21 @@
                   </p>
                   <ul class="features">
                       <li class="feature">
-                          <p>
                               Все наше мороженое изготавливается на собственном производстве, 
                               с использованием современного оборудования и проверенных временем технологий.
-                          </p>
                       </li>
                       <li class="feature">
-                          <p>
-                              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
-                              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-                          </p>
-                      </li>
-                      <li class="feature">
-                          <p>
                               Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, 
                               с которыми нас связывает долговременное сотрудничество.
-                          </p>
+                      </li>
+                      
+                      <li class="feature">
+                              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
+                              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                       </li>
                       <li class="feature">
-                          <p>
                               Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, 
                               который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-                          </p>
                       </li>
                   </ul>
               </section>
@@ -200,7 +199,7 @@
                       <form method="post" action="https://echo.htmlacademy.ru/">
                           <label class="visually-hidden">Электронная почта</label>
                           <input type="text" name="email" placeholder="Электронная почта">
-                          <input type="submit" class="button" value="отправить">
+                          <input type="submit" class="button" value="Отправить">
                       </form>
                   </div>
               </section>
@@ -236,16 +235,16 @@
 
           <footer class="page-footer">
                   <ul class="footer-social">
-                      <li><a href="#" class="social-button button-tw">Твитер</a></li>
-                      <li><a href="#" class="social-button button-inst">Инстаграм</a></li>
-                      <li><a href="#" class="social-button button-face">Фейсбук</a></li>
-                      <li><a href="#" class="social-button button-vk">Вконтакте</a></li>
+                      <li><a href="#" class="social-button button-tw"><span class="visually-hidden">Твитер</span></a></li>
+                      <li><a href="#" class="social-button button-inst"><span class="visually-hidden">Инстаграм</span></a></li>
+                      <li><a href="#" class="social-button button-face"><span class="visually-hidden">Фейсбук</span></a></li>
+                      <li><a href="#" class="social-button button-vk"><span class="visually-hidden">Вконтакте</span></a></li>
                   </ul>
                   
                   <ul class="footer-menu">
                       <li><a href="#"><b>Для поставщиков</b></a></li>
-                      <li><a href="#">О производстве</a></li>
                       <li><a href="#">Наши документы</a></li>
+                      <li><a href="#">О производстве</a></li>
                       <li><a href="#">Экологические стандарты</a></li>
                   </ul>
                   
