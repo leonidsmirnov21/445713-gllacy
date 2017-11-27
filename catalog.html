@@ -32,21 +32,23 @@
                   <div class="navigation">
                       <div class="search-wrapper">
                           <span class="navigation-search"><a>Поиск</a></span>
-                          <form method="get" action="https://echo.htmlacademy.ru/">
+<!--
+                          <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
                               <label class="visually-hidden">Поиск</label>
                               <input type="search" name="search" placeholder="Что ищем?">
                           </form>
+-->
                       </div>
 
                       <div class="login-wrapper">
                           <span class="navigation-login"><a>Вход</a></span>
 <!--
-                          <form method="post" action="https://echo.htmlacademy.ru/">
+                          <form class="login-form" method="post" action="https://echo.htmlacademy.ru/">
                               <label class="visually-hidden">Электронная почта</label>
                               <input type="text" name="email" placeholder="Электронная почта">
                               <label class="visually-hidden">Пароль</label>
                               <input type="password" name="password" placeholder="Пароль">
-                              <input type="submit" value="Войти">
+                              <input type="submit" class="button" value="Войти">
                               <a href="#">Забыли пароль?</a>
                               <a href="#">Новая регистрация</a>
                           </form>
@@ -55,7 +57,6 @@
 
                       <div class="basket-wrapper">
                           <span class="navigation-basket"><a>2 товаров</a></span>
-<!--
                           <div class="basket">
                               <ul class="basket-fill">
                                   <li>
@@ -73,10 +74,12 @@
                                       <p>450 руб.</p>
                                   </li>
                               </ul>
-                              <p class="finish-price">Итого: 750 руб.</p>
-                              <button type="button" class="button">Оформить заказ</button>
+                              <hr>
+                              <div class="finish-price">
+                                  <p>Итого: 750 руб.</p>
+                                  <button type="button" class="button">Оформить заказ</button>
+                              </div>
                           </div>
--->
                       </div>
                   </div>
               </div>
