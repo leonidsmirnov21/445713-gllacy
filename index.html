@@ -8,10 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <input type="radio" id="btn-1" name="toggle" checked>
-      <input type="radio" id="btn-2" name="toggle">
-      <input type="radio" id="btn-3" name="toggle">
-      
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+      <div class="site-wrapper">
       <div class="container">                  
           <header class="page-header">
               <div class="header-wrapper">
@@ -19,10 +19,10 @@
 
                   <nav class="menu">
                       <ul class="main-menu">
-                          <li><a href="catalog.html">Каталог</a>
+                          <li><a href="#">Каталог</a>
                               <ul class="sub-menu catalog-sub">
                                   <li><a href="#"><b>Новинки</b></a></li>
-                                  <li><a href="#">Сливочное</a></li>
+                                  <li><a href="catalog.html">Сливочное</a></li>
                                   <li><a href="#">Щербеты</a></li>
                                   <li><a href="#">Фруктовый лед</a></li>
                                   <li><a href="#">Мелорин</a></li>
@@ -49,9 +49,13 @@
                               <input type="text" name="email" placeholder="Электронная почта">
                               <label class="visually-hidden">Пароль</label>
                               <input type="password" name="password" placeholder="Пароль">
-                              <input type="submit" class="button" value="Войти">
-                              <a href="#">Забыли пароль?</a>
-                              <a href="#">Новая регистрация</a>
+                              <div class="entrance">     
+                                  <input type="submit" class="button" value="Войти">
+                                  <div class="help-wrapper">
+                                      <a href="#">Забыли пароль?</a>
+                                      <a href="#">Новая регистрация</a>
+                                  </div>
+                              </div>
                           </form>
                       </div>
 
@@ -68,24 +72,32 @@
                   </p>
               </div>
           </header>
-
+      </div>  
           <main>
+          <div class="container">        
               <h1 class="visually-hidden">магазин "Gllacy Shop"</h1>      
               <section class="slider">
                   <h2 class="visually-hidden">Слайдер</h2>
-                  <div class="slider-photo">
+                  <div class="slider-photos">
                       <div class="slider-controls">
-                          <label for="btn-1"></label>
-                          <label for="btn-2"></label>
-                          <label for="btn-3"></label>
+                          <label for="product-1"></label>
+                          <label for="product-2"></label>
+                          <label for="product-3"></label>
                       </div>
-                      <div class="slider-inner">
-                          <div class="slider-slides">
-                              <img src="img/bg-ice1.png" alt="фото 1">
-                              <img src="img/bg-ice2.png" alt="фото 2">
-                              <img src="img/bg-ice3.png" alt="фото 3">
-                          </div>
-                      </div>
+                      <ul class="slider-list">
+                          <li class="slider-item slide" id="slide1">
+                              <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+                              <a class="button slide-button" href="#">Давайте оба!</a>
+                          </li>
+                          <li class="slider-item slide" id="slide2">
+                              <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+                              <a class="button slide-button" href="#">Давайте оба!</a>
+                          </li>
+                          <li class="slider-item slide" id="slide3">
+                              <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+                              <a class="button slide-button" href="#">Давайте оба!</a>
+                          </li>
+                      </ul>
                   </div>
               </section>
 
@@ -203,38 +215,47 @@
                       </form>
                   </div>
               </section>
+          </div>
 
-              <section class="contacts">
+              <section class="contacts-wrapper">
                   <h2 class="visually-hidden">контактная информация</h2>
-                  <div class="contacts-info">
-                      <p>
-                          Адрес главного офиса и офлайн-магазина:<br>
-                          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-                      </p>
-                      <p>
-                          Для заказов по телефону:<br>
-                          <b class="tel">8 812 450-25-25</b><br>
-                          <span>(с 10 до 20 ежедневно)</span>
-                      </p>
-                      <button type="button" class="button">Форма обратной связи</button>
+                  <iframe class="contacts-map" src="https://yandex.ru/map-widget/v1/-/CBazqBwqcD" width="100%" height="429px" frameborder="0">
+                  </iframe>
+                  
+                  <div class="container">     
+                      <div class="contacts-info">
+                          <p>
+                              Адрес главного офиса и офлайн-магазина:<br>
+                              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+                          </p>
+                          <p>
+                              Для заказов по телефону:<br>
+                              <b class="tel">8 812 450-25-25</b><br>
+                              <span>(с 10 до 20 ежедневно)</span>
+                          </p>
+                          <button type="button" class="button">Форма обратной связи</button>
+                      </div>
                   </div>
+                  
               </section>
               
-<!--
-              <form class="contacts-form" method="post" action="https://echo.htmlacademy.ru/">
-                  <p>Мы обязательно вам ответим!</p>
-                  <label class="visually-hidden">Ваше имя</label>
-                  <input type="text" name="name" placeholder="Как вас зовут?">
-                  <label class="visually-hidden">Ваша почта</label>
-                  <input type="text" name="email" placeholder="Ваша почта для ответа?">
-                  <label class="visually-hidden">Напишите отзыв</label>
-                  <textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
-                  <input type="submit" class="button" value="отправить">
-              </form>
--->
+              <section class="modal-form">
+                  <form class="contacts-form" method="post" action="https://echo.htmlacademy.ru/">
+                      <p>Мы обязательно вам ответим!</p>
+                      <label class="visually-hidden">Ваше имя</label>
+                      <input type="text" name="name" placeholder="Как вас зовут?">
+                      <label class="visually-hidden">Ваша почта</label>
+                      <input type="text" name="email" placeholder="Ваша почта для ответа?">
+                      <label class="visually-hidden">Напишите отзыв</label>
+                      <textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+                      <input type="submit" class="button" value="Отправить">
+                  </form>
+                  <button class="modal-close" type="button">Закрыть</button>
+              </section>
                 
           </main>
-
+          
+          <div class="container">  
           <footer class="page-footer">
                   <ul class="footer-social">
                       <li><a href="#" class="social-button button-tw"><span class="visually-hidden">Твитер</span></a></li>
@@ -255,8 +276,7 @@
                       <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
                   </div>
           </footer>
-          
-          
+          </div>
           
       </div>                    
   </body>
