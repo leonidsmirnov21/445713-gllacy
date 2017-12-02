@@ -25,24 +25,21 @@
                               </ul>
                           </li>
                           <li><a href="#">Доставка и оплата</a></li>
-                          <li><a href="#">О компании</a></li>
+                          <li><a href="#">О Компании</a></li>
                       </ul>
                   </nav>
 
                   <div class="navigation">
                       <div class="search-wrapper">
                           <span class="navigation-search"><a>Поиск</a></span>
-<!--
                           <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
                               <label class="visually-hidden">Поиск</label>
                               <input type="search" name="search" placeholder="Что ищем?">
                           </form>
--->
                       </div>
 
                       <div class="login-wrapper">
                           <span class="navigation-login"><a>Вход</a></span>
-<!--
                           <form class="login-form" method="post" action="https://echo.htmlacademy.ru/">
                               <label class="visually-hidden">Электронная почта</label>
                               <input type="text" name="email" placeholder="Электронная почта">
@@ -56,12 +53,10 @@
                                   </div>
                               </div>
                           </form>
--->
                       </div>
 
                       <div class="basket-wrapper">
                           <span class="navigation-basket"><a>2 товаров</a></span>
-<!--
                           <div class="basket">
                               <ul class="basket-fill">
                                   <li>
@@ -87,7 +82,6 @@
                                   <button type="button" class="button">Оформить заказ</button>
                               </div>
                           </div>
--->
                       </div>
                   </div>
               </div>
@@ -100,7 +94,7 @@
                   </ul>
 
                   <p class="mode">
-                      с 10 до 20, ежедневно<br>
+                      С 10 до 20, ежедневно<br>
                       <span>8 812 450-25-25</span>
                   </p>
               </div>
@@ -112,7 +106,7 @@
               <section class="filters">
                   <h2 class="visually-hidden">фильтр товаров</h2>
                   <form class="filters-form" method="get" action="https://echo.htmlacademy.ru/">
-                      <fieldset class="fieldset-sort">
+                      <fieldset class="filter-sort">
                           <legend>Сортировка:</legend>
                           <div class="select">
                               <select name="sort" id="filters-sort">
@@ -136,22 +130,26 @@
                               <div class="toggle max-toggle"></div>
                           </div>
                       </fieldset>
-                      <fieldset>
+                      <fieldset class="filter-fat">
                           <legend>Жирность:</legend>
-                          <input type="radio" name="fats" id="fats-zero"><label for="fats-zero">0%</label>
-                          <input type="radio" name="fats" id="fats-small"><label for="fats-small">10%</label>
-                          <input type="radio" name="fats" id="fats-mid"><label for="fats-mid">до 30%</label>
-                          <input type="radio" name="fats" id="fats-big"><label for="fats-big">выше 30%</label> 
+                          <p>
+                              <input type="radio" name="fats" id="fats-zero"><label for="fats-zero">0%</label>
+                              <input type="radio" name="fats" id="fats-small" checked><label for="fats-small">10%</label>
+                              <input type="radio" name="fats" id="fats-mid"><label for="fats-mid">до 30%</label>
+                              <input type="radio" name="fats" id="fats-big"><label for="fats-big">выше 30%</label>
+                          </p>
                       </fieldset>
-                      <fieldset>
+                      <fieldset class="filter-fill">
                           <legend>Наполнители:</legend>
-                          <input type="checkbox" name="chocolate" id="fill-choco"><label for="fill-choco">шоколадные</label>
-                          <input type="checkbox" name="sugar" id="fill-sugar"><label for="fill-sugar">сахарные присыпки</label>
-                          <input type="checkbox" name="fruit" id="fill-fruit"><label for="fill-fruit">фрукты</label>
-                          <input type="checkbox" name="syrup" id="fill-syrup"><label for="fill-syrup">сиропы</label>
-                          <input type="checkbox" name="jam" id="fill-jam"><label for="fill-jam">джемы</label>
+                          <p>
+                              <input type="checkbox" name="chocolate" id="fill-choco" checked><label for="fill-choco">шоколадные</label>
+                              <input type="checkbox" name="sugar" id="fill-sugar" checked><label for="fill-sugar">сахарные присыпки</label>
+                              <input type="checkbox" name="fruit" id="fill-fruit"><label for="fill-fruit">фрукты</label>
+                              <input type="checkbox" name="syrup" id="fill-syrup"><label for="fill-syrup">сиропы</label>
+                              <input type="checkbox" name="jam" id="fill-jam"><label for="fill-jam">джемы</label>
+                          </p>
                       </fieldset>
-                      <input type="button" class="button" value="Применить">
+                      <input type="submit" class="button" value="Применить">
                   </form>
               </section>
 
@@ -166,7 +164,7 @@
                           <h3 class="item-info">
                               <a href="item1.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                           </h3>
-                            <button type="button" class="button">быстрый просмотр</button>
+                            <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -177,7 +175,7 @@
                           <h3 class="item-info">
                               <a href="item2.html">Сливочно-кофейное с кусочками шоколада</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -188,7 +186,7 @@
                           <h3 class="item-info">
                               <a href="item3.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -199,7 +197,7 @@
                           <h3 class="item-info">
                               <a href="item4.html">Сливочное крем-брюле с карамельной подливкой</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -210,7 +208,7 @@
                           <h3 class="item-info">
                               <a href="item5.html">Сливочное с брусничным джемом</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -221,7 +219,7 @@
                           <h3 class="item-info">
                               <a href="item6.html">Сливочно-черничное с цельными ягодами черники</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -232,7 +230,7 @@
                           <h3 class="item-info">
                               <a href="item7.html">Сливочно-лимонное с карамельной присыпкой</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -243,7 +241,7 @@
                           <h3 class="item-info">
                               <a href="item8.html">Сливочное с шоколадной стружкой</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -254,7 +252,7 @@
                           <h3 class="item-info">
                               <a href="item9.html">Сливочно-ванильное с кусочками шоколада</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -265,7 +263,7 @@
                           <h3 class="item-info">
                               <a href="item10.html">Сливочное с ментоловым сиропом</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -276,7 +274,7 @@
                           <h3 class="item-info">
                               <a href="item11.html">Сливочное с кусочками черного шоколада</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item">
@@ -287,7 +285,7 @@
                           <h3 class="item-info">
                               <a href="item12.html">Сливочное с мятным сиропом</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
                   </ul>
 
@@ -305,7 +303,7 @@
               </section>
           </main>
           
-          <hr>
+          <hr class="hr-footer">
 
           <footer class="page-footer">
                   <ul class="footer-social">

@@ -29,7 +29,7 @@
                               </ul>
                           </li>
                           <li><a href="#">Доставка и оплата</a></li>
-                          <li><a href="#">О компании</a></li>
+                          <li><a href="#">О Компании</a></li>
                       </ul>
                   </nav>
 
@@ -67,7 +67,7 @@
               
               <div class="mode-wrapper">
                   <p class="mode">
-                      с 10 до 20, ежедневно<br>
+                      С 10 до 20, ежедневно<br>
                       <span>8 812 450-25-25</span>
                   </p>
               </div>
@@ -130,7 +130,7 @@
                           <h3 class="item-info">
                               <a href="item1.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item hit">
@@ -141,7 +141,7 @@
                           <h3 class="item-info">
                               <a href="item2.html">Сливочно-кофейное с кусочками шоколада</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item hit">
@@ -152,7 +152,7 @@
                           <h3 class="item-info">
                               <a href="item3.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
 
                       <li class="item hit">
@@ -163,7 +163,7 @@
                           <h3 class="item-info">
                               <a href="item4.html">Сливочное крем-брюле с карамельной подливкой</a>
                           </h3>
-                          <button type="button" class="button">быстрый просмотр</button>
+                          <button type="button" class="button">Быстрый просмотр</button>
                       </li>
                   </ul>
               </section>
@@ -225,20 +225,21 @@
                   <div class="container">     
                       <div class="contacts-info">
                           <p>
-                              Адрес главного офиса и офлайн-магазина:<br>
+                              Адрес главного офиса<br>и офлайн-магазина:<br>
                               <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
                           </p>
                           <p>
-                              Для заказов по телефону:<br>
+                              <span>Для заказов по телефону:</span>
                               <b class="tel">8 812 450-25-25</b><br>
                               <span>(с 10 до 20 ежедневно)</span>
                           </p>
-                          <button type="button" class="button">Форма обратной связи</button>
+                          <button type="button" class="button button-form">Форма обратной связи</button>
                       </div>
                   </div>
                   
               </section>
               
+              <div class="pre-form"></div>
               <section class="modal-form">
                   <form class="contacts-form" method="post" action="https://echo.htmlacademy.ru/">
                       <p>Мы обязательно вам ответим!</p>
@@ -278,6 +279,66 @@
           </footer>
           </div>
           
-      </div>                    
+      </div>
+      <script>
+          var link = document.querySelector(".button-form");
+          var preForm = document.querySelector(".pre-form");
+          var popup = document.querySelector(".modal-form");
+          var closePopup = popup.querySelector(".modal-close");
+          var form = popup.querySelector("form");
+          var inputName = popup.querySelector("[name=name]");
+          var inputEmail = popup.querySelector("[name=email]");
+          var inputText = popup.querySelector("[name=feedback-text");
+          var storage = localStorage.getItem("inputName");
+          
+          link.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              preForm.classList.add("modal-show");
+              popup.classList.add("modal-show");
+              
+              if (storage) {
+                  inputName.value = storage;
+                  inputEmail.focus();
+              } else {
+                  inputName.focus();
+              }
+          });
+          
+          closePopup.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              popup.classList.remove("modal-show");
+              popup.classList.remove("modal-error");
+              preForm.classList.remove("modal-show");
+          });
+          
+          form.addEventListener("submit", function (evt) {
+              if (!inputName.value || !inputEmail.value || !inputText.value) {
+                  evt.preventDefault();
+                  popup.classList.remove("modal-error");
+                  popup.offsetWidth = popup.offsetWidth;
+                  popup.classList.add("modal-error");
+              } else {
+                  localStorage.setItem("inputName", inputName.value);
+              }
+          });
+          
+          window.addEventListener("keydown", function (evt) {
+              if (evt.keyCode === 27) {
+                  if (popup.classList.contains("modal-show")) {
+                      popup.classList.remove("modal-show");
+                      popup.classList.remove("modal-error");
+                      preForm.classList.remove("modal-show");
+                  }
+              }
+          });
+          
+          preForm.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              popup.classList.remove("modal-show");
+              popup.classList.remove("modal-error");
+              preForm.classList.remove("modal-show");
+          })
+          
+      </script>                    
   </body>
 </html>
