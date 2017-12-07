@@ -54,5 +54,5 @@
               popup.classList.remove("modal-show");
               popup.classList.remove("modal-error");
               preForm.classList.remove("modal-show");
-          })
+          });
           

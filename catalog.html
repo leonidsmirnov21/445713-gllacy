@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-inner">
       <div class="container">      
           <header class="page-header">
               <div class="header-wrapper">
@@ -15,7 +15,7 @@
 
                   <nav class="menu">
                       <ul class="main-menu">
-                          <li><a>Каталог</a>
+                          <li tabindex="0"><a>Каталог</a>
                               <ul class="sub-menu catalog-sub">
                                   <li><a href="#"><b>Новинки</b></a></li>
                                   <li><a>Сливочное</a></li>
@@ -30,7 +30,7 @@
                   </nav>
 
                   <div class="navigation">
-                      <div class="search-wrapper">
+                      <div class="search-wrapper" tabindex="0">
                           <span class="navigation-search"><a>Поиск</a></span>
                           <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
                               <label class="visually-hidden">Поиск</label>
@@ -38,7 +38,7 @@
                           </form>
                       </div>
 
-                      <div class="login-wrapper">
+                      <div class="login-wrapper" tabindex="0">
                           <span class="navigation-login"><a>Вход</a></span>
                           <form class="login-form" method="post" action="https://echo.htmlacademy.ru/">
                               <label class="visually-hidden">Электронная почта</label>
@@ -55,8 +55,8 @@
                           </form>
                       </div>
 
-                      <div class="basket-wrapper">
-                          <span class="navigation-basket"><a>2 товаров</a></span>
+                      <div class="basket-wrapper" tabindex="0">
+                          <span class="navigation-basket"><a class="basket-active">2 товаров</a></span>
                           <div class="basket">
                               <ul class="basket-fill">
                                   <li>
