@@ -1102,6 +1102,7 @@ input[type="radio"] + label::before {
     width: 22px;
     height: 22px;
     background-image: url(../img/radio-off.svg);
+    background-repeat: no-repeat;
     margin-right: 9px;
     vertical-align: middle;
     background-size: cover;
@@ -1110,10 +1111,12 @@ input[type="radio"] + label::before {
 
 input[type="radio"]:hover + label::before {
     background-image: url(../img/radio-hover.svg);
+    background-repeat: no-repeat;
 }
 
 input[type="radio"]:checked + label::before {
     background-image: url(../img/radio-on.svg);
+    background-repeat: no-repeat;
 }
 
 .filter-fill {
@@ -1163,6 +1166,7 @@ input[type="checkbox"] + label::before {
     width: 20px;
     height: 20px;
     background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
     margin-right: 10px;
     vertical-align: middle;
     background-size: cover;
@@ -1171,10 +1175,12 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:hover + label::before {
     background-image: url(../img/checkbox-hover.svg);
+    background-repeat: no-repeat;
 }
 
 input[type="checkbox"]:checked + label::before {
     background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
 }
 
 .filters-form input[type=submit] {
@@ -1626,13 +1632,15 @@ p.about {
     color: #323232;
 }
 
-.contacts-info button {
+.contacts-info .button {
+    display: block;
     width: 100%;
     padding: 10px 10px;
     border-radius: 20px;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
+    box-sizing: border-box;
 }
 
 @-webkit-keyframes move-form {
