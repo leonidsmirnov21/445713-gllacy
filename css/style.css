@@ -136,7 +136,7 @@ input[type="button"]:active {
 
 .site-wrapper {
     min-width: 1200px;
-    background-image: url(../img/bg-ice1.png);
+    background-image: url("../img/bg-ice1.png");
     background-repeat: no-repeat;
     background-position: top center;
     -webkit-transition: background-image 0.5s ease,
@@ -155,11 +155,11 @@ input[type="button"]:active {
 }
 
 .site-wrapper::before {
-    background-image: url(../img/bg-ice2.png);
+    background-image: url("../img/bg-ice2.png");
 }
 
 .site-wrapper::after {
-    background-image: url(../img/bg-ice3.png);
+    background-image: url("../img/bg-ice3.png");
 }
 
 .container {
@@ -229,7 +229,7 @@ input[type="button"]:active {
     color: #333333;
 }
 
-.main-menu > li:active > a {
+.main-menu > li > a:active {
     background-color: #ededed;
     -webkit-box-shadow: inset 0 2px 1px #696969;
             box-shadow: inset 0 2px 1px #696969;
@@ -375,7 +375,7 @@ input[type="button"]:active {
     position: absolute;
     top: 7px;
     left: 8px;
-    background-image: url(../img/loupe.svg);
+    background-image: url("../img/loupe.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 17px;
@@ -383,7 +383,7 @@ input[type="button"]:active {
 }
 
 .search-wrapper:hover a:not([href])::before {
-    background-image: url(../img/loupeBlack.svg);
+    background-image: url("../img/loupe-black.svg");
 }
 
 .search-wrapper {
@@ -425,7 +425,7 @@ input[type="button"]:active {
     position: absolute;
     top: 6px;
     left: 16px;
-    background-image: url(../img/entrance.svg);
+    background-image: url("../img/entrance.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 21px;
@@ -433,7 +433,7 @@ input[type="button"]:active {
 }
 
 .login-wrapper:hover a:not([href])::before {
-    background-image: url(../img/entranceBlack.svg);
+    background-image: url("../img/entrance-black.svg");
 }
 
 .login-wrapper {
@@ -506,7 +506,7 @@ input[type="button"]:active {
     position: absolute;
     top: 6px;
     left: 16px;
-    background-image: url(../img/basket.svg);
+    background-image: url("../img/basket.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 21px;
@@ -514,12 +514,12 @@ input[type="button"]:active {
 }
 
 .navigation-basket a.basket-active:not([href])::before {
-    background-image: url(../img/basket-red.svg);
+    background-image: url("../img/basket-red.svg");
 }
 
 .basket-wrapper:hover a:not([href])::before
  {
-    background-image: url(../img/basket-red.svg);
+    background-image: url("../img/basket-red.svg");
 }
 
 .navigation a[href] {
@@ -598,7 +598,7 @@ input[type="button"]:active {
     font-size: 0;
     padding: 0;
     background-color: transparent;
-    background-image: url(../img/close.png);
+    background-image: url("../img/close.png");
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
@@ -647,7 +647,7 @@ input[type="button"]:active {
     text-align: right;
 }
 
-.finish-price p{
+.finish-price p {
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
@@ -718,7 +718,7 @@ input[type="button"]:active {
     position: absolute;
     top: 1px;
     right: -15px;
-} 
+}
 
 .breadcrumbs a[href]:hover,
 .breadcrumbs a[href]:focus,
@@ -854,7 +854,7 @@ h1 {
 
 .offer:first-of-type {
     background-color: #611121;
-    background-image: url(../img/raspberries.jpg);
+    background-image: url("../img/raspberries.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -862,7 +862,7 @@ h1 {
 .offer:last-of-type {
     margin-left: auto;
     background-color: #41281d;
-    background-image: url(../img/chocolate.jpg);
+    background-image: url("../img/chocolate.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -924,6 +924,7 @@ h1 {
 fieldset.filter-sort {
     width: 195px;
     margin-bottom: 17px;
+    margin-right: 15px;
 }
 
 
@@ -940,7 +941,6 @@ fieldset.filter-sort {
 
 .select {
     position: relative;
-    margin-right: 15px;
 }
 
 select {
@@ -969,7 +969,7 @@ select {
 select:hover {
     color: #000;
     background-color: rgba(255, 255, 255, 1); 
-    background-image: url("../img/select-arrowBlack.svg")
+    background-image: url("../img/select-arrow-black.svg");
 }
 
 option {
@@ -1101,7 +1101,7 @@ input[type="radio"] + label::before {
     display: inline-block;
     width: 22px;
     height: 22px;
-    background-image: url(../img/radio-off.svg);
+    background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
     margin-right: 9px;
     vertical-align: middle;
@@ -1110,12 +1110,12 @@ input[type="radio"] + label::before {
 }
 
 input[type="radio"]:hover + label::before {
-    background-image: url(../img/radio-hover.svg);
+    background-image: url("../img/radio-hover.svg");
     background-repeat: no-repeat;
 }
 
 input[type="radio"]:checked + label::before {
-    background-image: url(../img/radio-on.svg);
+    background-image: url("../img/radio-on.svg");
     background-repeat: no-repeat;
 }
 
@@ -1165,7 +1165,7 @@ input[type="checkbox"] + label::before {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     margin-right: 10px;
     vertical-align: middle;
@@ -1174,12 +1174,12 @@ input[type="checkbox"] + label::before {
 }
 
 input[type="checkbox"]:hover + label::before {
-    background-image: url(../img/checkbox-hover.svg);
+    background-image: url("../img/checkbox-hover.svg");
     background-repeat: no-repeat;
 }
 
 input[type="checkbox"]:checked + label::before {
-    background-image: url(../img/checkbox-on.svg);
+    background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
 }
 
@@ -1281,7 +1281,7 @@ li.item:hover::before {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../img/hit.svg);
+    background-image: url("../img/hit.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 61px;
@@ -1362,7 +1362,7 @@ li.item:hover .button {
     margin-bottom: 40px;
     padding: 24px 0;
     background-color: antiquewhite;
-    background-image: url(../img/wafer.jpg);
+    background-image: url("../img/wafer.jpg");
     background-position: 0 0;
     border-radius: 15px;
     
@@ -1411,7 +1411,7 @@ p.about {
     position: absolute;
     top: -13px;
     left: 20px;
-    background-image: url(../img/ice-cream.svg);
+    background-image: url("../img/ice-cream.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 49px;
@@ -1424,7 +1424,7 @@ p.about {
     position: absolute;
     top: -13px;
     left: 0;
-    background-image: url(../img/cow.svg);
+    background-image: url("../img/cow.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 49px;
@@ -1437,7 +1437,7 @@ p.about {
     position: absolute;
     top: -10px;
     left: 20px;
-    background-image: url(../img/eco.svg);
+    background-image: url("../img/eco.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 49px;
@@ -1450,7 +1450,7 @@ p.about {
     position: absolute;
     top: -10px;
     left: 0;
-    background-image: url(../img/thermometer.svg);
+    background-image: url("../img/thermometer.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 49px;
@@ -1489,7 +1489,7 @@ p.about {
     padding: 25px 20px;
     padding-bottom: 80px;
     background-color: #fff;
-    background-image: url(../img/bg-strawberry.jpg);
+    background-image: url("../img/bg-strawberry.jpg");
     background-position: -55px -230px;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -1531,9 +1531,9 @@ p.about {
     padding: 30px 21px;
     background-color: #f8f7f4;
     border: 5px solid;
-    -webkit-border-image: url(../img/mail-fon.svg) 7 round round;
-         -o-border-image: url(../img/mail-fon.svg) 7 round round;
-            border-image: url(../img/mail-fon.svg) 7 round round;
+    -webkit-border-image: url("../img/mail-border.svg") 7 round round;
+         -o-border-image: url("../img/mail-border.svg") 7 round round;
+            border-image: url("../img/mail-border.svg") 7 round round;
     border-radius: 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1582,6 +1582,10 @@ p.about {
 .contacts-wrapper iframe {
     width: 100%;
     border: 0;
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .contacts-info {
@@ -1882,7 +1886,7 @@ p.about {
     content: "";
     top: 7px;
     left: 9px;
-    background-image: url(../img/icon-right-small.svg);
+    background-image: url("../img/icon-right-small.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 8px;
@@ -1901,7 +1905,7 @@ p.about {
     content: "";
     top: 7px;
     left: 9px;
-    background-image: url(../img/icon-right-small.svg);
+    background-image: url("../img/icon-right-small.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 8px;
@@ -1993,23 +1997,23 @@ hr.hr-footer {
 }
 
 .button-tw {
-    background-image: url(../img/twitter.svg);
+    background-image: url("../img/twitter.svg");
     background-repeat: no-repeat;
     
 }
 
 .button-inst {
-    background-image: url(../img/instagram.svg);
+    background-image: url("../img/instagram.svg");
     background-repeat: no-repeat;
 }
 
 .button-face {
-    background-image: url(../img/fb.svg);
+    background-image: url("../img/fb.svg");
     background-repeat: no-repeat;
 }
 
 .button-vk {
-    background-image: url(../img/vk.svg);
+    background-image: url("../img/vk.svg");
     background-repeat: no-repeat;
 }
 
@@ -2056,7 +2060,7 @@ hr.hr-footer {
     position: absolute;
     top: 2px;
     left: -20px;
-    background-image: url(../img/heart.svg);
+    background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 15px;
@@ -2075,7 +2079,7 @@ hr.hr-footer {
     padding-left: 3px;
 }
 
-.footer-copyright p{
+.footer-copyright p {
     margin: 0;
     padding: 0;
 }
