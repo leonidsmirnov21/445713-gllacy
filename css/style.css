@@ -15,7 +15,7 @@ body {
     background-image: url("../img/light-inner.png");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
+    background-size: contain;
 }
 
 .visually-hidden {
@@ -1863,7 +1863,8 @@ p.about {
 
 .pagination-list a {
     display: block;
-    min-width: 27px;
+    position: relative;
+    width: 27px;
     height: 27px;
     padding: 5px 0;
     font-size: 16px;
@@ -1875,10 +1876,6 @@ p.about {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 50%;
-}
-
-.pagination-list li a {
-    position: relative;
 }
 
 .pagination-list li:first-of-type a::before {
@@ -1896,20 +1893,17 @@ p.about {
             transform: rotate(180deg);
 }
 
-.pagination-list li:last-of-type a {
-    min-width: 18px;
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.pagination-list li:last-of-type a::before {
-    position: absolute;
-    content: "";
-    top: 7px;
-    left: 9px;
+.pagination-list li:last-of-type a {
+    width: 18px;
     background-image: url("../img/icon-right-small.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 8px;
-    height: 12px;
+    background-position: center;
 }
 
 .pagination-list li:first-of-type a {
