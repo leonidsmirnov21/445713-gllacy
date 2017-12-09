@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
     </head>
     <body>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
         <div class="site-wrapper">
             <div class="container">
                 <header class="page-header">
@@ -87,15 +87,15 @@
                                 <label for="product-3" tabindex="0"></label>
                             </div>
                             <ul class="slider-list">
-                                <li class="slider-item slide" id="slide1">
+                                <li class="slider-item slider-item-1 slide">
                                     <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
                                     <a class="button slide-button" href="#">Давайте оба!</a>
                                 </li>
-                                <li class="slider-item slide" id="slide2">
+                                <li class="slider-item slider-item-2 slide">
                                     <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
                                     <a class="button slide-button" href="#">Давайте оба!</a>
                                 </li>
-                                <li class="slider-item slide" id="slide3">
+                                <li class="slider-item slider-item-3 slide">
                                     <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
                                     <a class="button slide-button" href="#">Давайте оба!</a>
                                 </li>
@@ -303,6 +303,6 @@
                 </footer>
             </div>
         </div>
-        <script src="js/script.js"></script>
+        <script src="js/script.min.js"></script>
     </body>
 </html>
