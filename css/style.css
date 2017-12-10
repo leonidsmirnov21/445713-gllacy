@@ -993,8 +993,8 @@ fieldset.filter-range {
     white-space: nowrap;
 }
 
-.filter-range input#price-min,
-.filter-range input#price-max {
+fieldset.filter-range input.price-min,
+fieldset.filter-range input.price-max {
     margin: 0;
     padding: 0 0;
     width: 25px;
