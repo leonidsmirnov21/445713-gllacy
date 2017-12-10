@@ -54,7 +54,7 @@ img {
 body input[type=email],
 body input[type=password],
 body input[type=search],
-body input[type=text]:not(.filter-range),
+body input[type=text],
 body textarea {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -73,7 +73,7 @@ body textarea {
 body input[type=email]:hover,
 body input[type=password]:hover,
 body input[type=search]:hover,
-body input[type=text]:not(.filter-range):hover,
+body input[type=text]:not(.price-min):not(.price-max):hover,
 body textarea:hover {
     padding: 8px 13px;
     border: 2px solid rgba(154, 154, 154, 0.52);
@@ -82,7 +82,7 @@ body textarea:hover {
 body input[type=email]:focus,
 body input[type=password]:focus,
 body input[type=search]:focus,
-body input[type=text]:not(.filter-range):focus,
+body input[type=text]:not(.price-min):not(.price-max):focus,
 body textarea:focus {
     padding: 8px 13px;
     border: 2px solid rgba(46, 136, 228, 0.52);
@@ -1119,6 +1119,11 @@ input[type="radio"]:checked + label::before {
     background-repeat: no-repeat;
 }
 
+input[type="radio"]:disabled + label::before {
+    background-image: url("../img/radio-dis.svg");
+    background-repeat: no-repeat;
+}
+
 .filter-fill {
     
 }
@@ -1180,6 +1185,11 @@ input[type="checkbox"]:hover + label::before {
 
 input[type="checkbox"]:checked + label::before {
     background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:disabled + label::before {
+    background-image: url("../img/checkbox-dis.svg");
     background-repeat: no-repeat;
 }
 
